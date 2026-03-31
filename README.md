@@ -1,8 +1,8 @@
 # skills
 
-Agent-agnostic skills for AI coding assistants, installable via [skills.sh](https://skills.sh/).
+My opinionated set of custom skills for AI coding assistants. Feel free to use them.
 
-Compatible with Claude Code, Codex, Cursor, Windsurf, GitHub Copilot, and any agent that supports the [Agent Skills open standard](https://agentskills.io/specification).
+Compatible with Claude Code, Codex, Cursor, and any agent supporting the [Agent Skills standard](https://agentskills.io/specification).
 
 
 ## Install
@@ -11,17 +11,19 @@ Compatible with Claude Code, Codex, Cursor, Windsurf, GitHub Copilot, and any ag
 npx skills add emmsixx/skills
 ```
 
-To install for a specific agent:
-
-```sh
-npx skills add emmsixx/skills -a claude-code
-npx skills add emmsixx/skills -a cursor
-```
-
-To install a single skill:
+To install a specific skill:
 
 ```sh
 npx skills add emmsixx/skills --skill lecture-notes
+```
+
+
+## Dotfiles
+
+Add to your setup script to reproduce across machines:
+
+```sh
+npx skills add emmsixx/skills --no-confirm
 ```
 
 
@@ -30,14 +32,3 @@ npx skills add emmsixx/skills --skill lecture-notes
 | Skill | Description |
 |-------|-------------|
 | [lecture-notes](./lecture-notes/) | Transform lecture materials into exam-ready Markdown notes for Obsidian |
-
-
-## Adding to Dotfiles
-
-To reproduce these skills across machines, add an install step to your setup script:
-
-```sh
-npx skills add emmsixx/skills --no-confirm
-```
-
-Or declare them in a `.skills` file at your dotfiles root and run `npx skills install`.
