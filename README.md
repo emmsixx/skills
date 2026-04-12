@@ -32,3 +32,11 @@ npx skills add emmsixx/skills --no-confirm
 | Skill | Description |
 |-------|-------------|
 | [lecture-notes](./lecture-notes/) | Transform lecture materials into exam-ready Markdown notes for Obsidian |
+
+### lecture-notes requirements
+
+For audio or video lecture inputs, the `lecture-notes` skill uses Groq Whisper for transcription. Make sure `GROQ_API_KEY` is defined in your environment before using those workflows.
+
+```sh
+export GROQ_API_KEY=your_groq_api_key_here
+```
