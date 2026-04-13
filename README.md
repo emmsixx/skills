@@ -35,8 +35,8 @@ npx skills add emmsixx/skills --no-confirm
 
 ### lecture-notes requirements
 
-For audio or video lecture inputs, the `lecture-notes` skill uses Groq Whisper for transcription. Make sure `GROQ_API_KEY` is defined in your environment before using those workflows.
+For audio or video lecture inputs, the `lecture-notes` skill uses OpenRouter audio transcription. Make sure `OPENROUTER_API_KEY` is defined in your environment before using those workflows.
 
 ```sh
-export GROQ_API_KEY=your_groq_api_key_here
+export OPENROUTER_API_KEY=your_openrouter_api_key_here
 ```
